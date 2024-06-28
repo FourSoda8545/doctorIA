@@ -15,8 +15,8 @@ Predicción de Enfermedades: La aplicación acepta una lista de síntomas como e
 ## Instalación
 1. Clonar el Repositorio:
    ```
-   git clone https://github.com/tu_usuario/nombre_del_proyecto.git
-   cd nombre_del_proyecto
+   git clone https://github.com/FourSoda8545/doctorIA.git
+   cd doctorIA
    ```
 
 2. Instalar Dependencias:
@@ -26,7 +26,7 @@ Predicción de Enfermedades: La aplicación acepta una lista de síntomas como e
 ## Uso
 1. Ejecutar la Aplicación:
    ```
-   python app.py
+   python doctorIA.py
    ```
 
 2. Acceder a la Aplicación:
