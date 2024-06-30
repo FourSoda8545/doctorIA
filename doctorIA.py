@@ -1,6 +1,6 @@
 # Importamos las librerías necesarias de Flask
-from flask import Flask, render_template, request
-
+from flask import Flask, request
+from flask import render_template as rt 
 # Inicializamos la aplicación Flask
 app = Flask(__name__)
 
@@ -18,22 +18,22 @@ diagnoses = {
 # Definimos la ruta principal que muestra la página de inicio
 @app.route('/')
 def home():
-    # Renderiza el archivo HTML 'index.html' cuando se accede a la ruta principal
-    return render_template('index.html')
+    # Convertimos el archivo HTML 'index.html' a visual
+    return rt('index.html')
 
 # Definimos la ruta para manejar el formulario de diagnóstico
 @app.route('/diagnose', methods=['POST'])
 def diagnose():
     
     # Obtenemos los síntomas y alergias del formulario enviado por el usuario
-    symptoms = request.form.get('symptoms').lower()
-    allergies = request.form.get('allergies').lower()
+    sintomas = request.form.get('sintomas').lower()
+    alergias = request.form.get('alergias').lower()
     
     # Buscamos el diagnóstico correspondiente en el diccionario
-    diagnosis = diagnoses.get(symptoms, "No se encontró un diagnóstico para los síntomas proporcionados.")
+    diagnosis = diagnoses.get(sintomas, "No se encontró un diagnóstico para los síntomas proporcionados.")
     
     # Renderizamos el archivo HTML 'index.html' con el diagnóstico incluido
-    return render_template('index.html', diagnosis=diagnosis)
+    return rt('index.html', diagnosis=diagnosis)
 
 # Punto de entrada de la aplicación
 if __name__ == '__main__':
