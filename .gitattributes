@@ -1,0 +1,5 @@
+# Establece LF (Unix) para todos los archivos de texto
+# compatibilidad entre dispositivos
+
+# -*- coding: utf-8 -*-
+* text=auto
