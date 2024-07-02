@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +8,10 @@
 <body>
     <h1>Bienvenido a DoctorIA</h1>
     <form method="POST" action="/diagnose">
-        <label for="symptoms">Describe tus síntomas:</label>
-        <input type="text" id="symptoms" name="symptoms" required><br>
-        <label for="allergies">Alergias conocidas:</label>
-        <input type="text" id="allergies" name="allergies"><br>
+        <label for="sintomas">Describe tus síntomas:</label>
+        <input type="text" id="sintomas" name="sintomas" required><br>
+        <label for="alergias">Alergias conocidas:</label>
+        <input type="text" id="alergias" name="alergias"><br>
         <input type="submit" value="Diagnosticar">
     </form>
     {% if diagnosis %}
@@ -19,3 +20,4 @@
     {% endif %}
 </body>
 </html>
+
