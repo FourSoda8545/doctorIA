@@ -34,7 +34,7 @@ Predicción de Enfermedades: La aplicación acepta una lista de síntomas como e
 
 3. Interfaz de Usuario:
    - Ingresa los síntomas separados por comas en el campo de texto.
-   - Haz clic en el botón "Get Diagnosis" para obtener el diagnóstico.
+   - Haz clic en el botón "obtener diagnostico" para obtener el diagnóstico.
 
 ## Contribuciones
 

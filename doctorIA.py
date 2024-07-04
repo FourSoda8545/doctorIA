@@ -1,6 +1,7 @@
 # Importamos las librerías necesarias de Flask
 from flask import Flask, request
 from flask import render_template as rt 
+
 # Inicializamos la aplicación Flask
 app = Flask(__name__)
 
@@ -10,7 +11,7 @@ diagnoses = {
     "tos": "Podría ser un resfriado común o una infección respiratoria. Si persiste, consulta a un médico.",
     "dolor de cabeza": "Podría ser una migraña o tensión. Descansa y mantente hidratado.",
     "dolor de garganta": "Puede ser una posible irritación de garganta o infección auricular. Toma un desinflamatorio como Dualgos cada 8 horas y descanso de 1 día",
-    "me duele el pene": "Posiblemtente tengas sida, podrías considerar cortartelo hijo de tu puta madre",
+    "": "",
     
     # Añadir más diagnósticos aquí
 }
